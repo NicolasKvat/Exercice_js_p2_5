@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 5</title>
+  </head>
+  <body>
+    <div class="container">
+        <a onmouseover="afficher(img)" ><img src="img/image1.jpg" id="image1"/></a>
+      <img src="img/image2.jpg" id="image2" />
+      <img src="img/image3.jpg" id="image3" />
+      <img src="img/image4.jpg" id="image4" />
+      <img src="img/image5.jpg" id="image5" />
+    </div>
+    <script type="text/javascript">
+    var img1 = document.getElementById('image1').value;
+    var  img2 = document.getElementById('image2').value;
+    var  img3 = document.getElementById('image3').value;
+    var  img4 = document.getElementById('image4').value;
+    var  img5 = document.getElementById('image5').value;
+    var imgs = [img1, img2, img3, img4, img5];
+
+    function afficher() {
+      for (var i = 0; i < imgs.length; i++) {
+        img = imgs[i];
+      }
+    }
+    </script>
+  </body>
+</html>
